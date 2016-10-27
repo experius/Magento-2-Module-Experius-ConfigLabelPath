@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Config\Model\Config\Structure\Element\Field">
+		<plugin disabled="false" name="Experius_ConfigLabelPath_Plugin_Magento_Config_Model_Config_Structure_Element_Field" sortOrder="10" type="Experius\ConfigLabelPath\Plugin\Magento\Config\Model\Config\Structure\Element\Field"/>
+	</type>
+</config>
