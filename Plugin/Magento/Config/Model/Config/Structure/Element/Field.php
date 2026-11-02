@@ -18,6 +18,12 @@ class Field {
 		\Magento\Config\Model\Config\Structure\Element\Field $field,
 		$result
 	){
-		return "<div style='color: #808080; font-size: 1.1rem;'>{$field->getConfigPath()}</div>" . $result;
+		$configPath = $field->getConfigPath() ?: $field->getPath();
+
+        return sprintf(
+            '<span style="color: #808080; font-size: 1.1rem;">%s</span><br/>%s',
+            htmlspecialchars((string) $configPath, ENT_QUOTES, 'UTF-8'),
+            $result
+        );
 	}
 }
